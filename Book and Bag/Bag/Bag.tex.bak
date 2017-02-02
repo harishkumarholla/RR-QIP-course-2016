@@ -1,0 +1,145 @@
+\documentclass[16pt]{scrartcl}
+\usepackage{lipsum}
+%\usepackage[fontsize=16pt]{scrextend}
+\usepackage[paperwidth=18in,paperheight=9in,margin=5mm,heightrounded]{geometry}
+\usepackage[usenames,x11names,dvipsnames,svgnames]{xcolor}
+\usepackage{setspace,csquotes}
+\usepackage[T1]{fontenc}
+\usepackage{calligra,array}
+\usepackage{tgschola}
+\usepackage{tgpagella}
+\usepackage{fourier-orns}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{wallpaper}
+\usepackage{microtype}
+\usepackage[normalem]{ulem}
+\usepackage[super]{nth}
+%\usepackage[utopia,expert]{mathdesign} %%,charter or bitstream-charter or garamond or urw-garamond or adobe-utopia or utopia
+\usepackage{charter}
+%\usepackage{mathpazo}
+%\usepackage[charter]{mathdesign}
+%\usepackage[black]{merriweather}   %% only in texlive
+\hyphenpenalty 100000
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usepackage[outline]{contour}
+  \contournumber{32}
+  \contourlength{0.05em}
+\usetikzlibrary{calc,backgrounds}
+\usetikzlibrary{patterns}
+\tcbuselibrary{skins}
+%
+%
+\usepackage[object=vectorian]{pgfornament}
+%% A macro with two arguments to change ornaments and colors easily
+%% Syntax -- \sectionline{<color>}{<ornament>}
+\newcommand{\sectionline}[2]{%
+  \nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+  {\color{#1}
+    \resizebox{0.5\linewidth}{2ex}
+    {{%
+    {\begin{tikzpicture}
+    \coordinate  (C) at (0,0);
+    \coordinate (D) at (8,0);
+    \path (C) to [ornament=#2] (D);
+    \end{tikzpicture}}}}}%
+    \hspace{\fill}
+    \par\nointerlineskip \vspace{.5\baselineskip}
+  }
+%
+\input Zallman.fd
+\newcommand*\initfamily{\usefont{U}{Zallman}{xl}{n}}
+%
+
+%--------------------
+\graphicspath{{../../images/background/}
+              {../../images/logos/}
+              {../../images/paper-background/}
+              {../../images/pec-photo/}
+              {../../images/photos/course/}
+              {../../images/photos/participants/}
+              {../../images/seals/}
+              {../../images/tiles/}
+              }
+%--------------------
+%
+\definecolor{title}{RGB}{180,0,0}
+\definecolor{other}{RGB}{171,0,255}
+\definecolor{name}{RGB}{255,0,0}
+\definecolor{phd}{RGB}{0,0,250}
+%
+\renewcommand{\arraystretch}{0.9}
+%\contournumber{120}
+\begin{document}%
+\pagecolor{Bisque}
+
+\begin{tcolorbox}[skin=enhancedmiddle jigsaw,height=8.6in,width=17.6in,boxsep=0.25in,
+boxrule=0mm,top=0mm,bottom=0mm,left=0mm,right=0mm,
+rightrule=1cm,colupper=DarkViolet,%blue!25!black,
+interior style={fill overzoom image=iot3,fill image opacity=0},
+frame style={pattern=crosshatch dots light steel blue},
+overlay={%
+\coordinate (X) at ([xshift=-5mm]frame.east);
+\fill[shading=ball,ball color=blue!50!white,opacity=0.5] (X) circle (4mm);}
+]%----------------------
+\begin{minipage}{0.1\textwidth}
+  \noindent
+  \includegraphics[width=\linewidth]{pecemblem}
+\end{minipage}%
+\begin{minipage}{0.775\textwidth}
+\begin{center}%
+\onehalfspacing
+    {\Large\bfseries {\color{DarkRed}{\fontfamily{pzc}\fontsize{55}{68}\selectfont{Department of EEE \& Department of IT}}}}\\[0.6em]
+    {\fontsize{53}{66}\bfseries \textcolor{yellow!80!black} {\contour{DarkRed}{Pondicherry  Engineering College}}}\\[0.3em]%\initfamily
+    {\huge\bfseries Puducherry -- 605 014}
+\end{center}%
+\end{minipage}%
+\begin{minipage}{0.125\textwidth}
+  \noindent
+  \makebox[\textwidth][c]{\includegraphics[width=1.15\linewidth]{aicte-good-transparent}}   %% aicte
+\end{minipage}%
+
+\begin{center}
+  \fontsize{40}{48}\bfseries AICTE Sponsored QIP Short Term Course
+
+  \fontsize{30}{36}\bfseries on
+\end{center}
+\begin{tcolorbox}[skin=enhancedmiddle jigsaw,
+%boxrule=2.5mm,
+frame hidden,interior hidden,%top=0mm,bottom=0mm,boxsep=0mm,
+borderline={2mm}{-2mm}{olive},
+borderline={2mm}{0mm}{olive!50!yellow},
+borderline={2mm}{2mm}{yellow},
+interior style={fill overzoom image=goldshade,fill image opacity=1},
+halign=center,
+%drop fuzzy shadow=blue,
+%drop large lifted shadow,
+lifted shadow={4mm}{-17mm}{26mm}{0.1mm}{black!50!white},
+colframe=red!75!black]
+    \contournumber{64}
+  \contourlength{0.08em}
+  %\SetTracking[ spacing = {70 * ,166, } ]{ encoding = * , shape = sc }{ 70 }
+  \fontsize{55}{68}\bfseries\scshape \textcolor{DarkOliveGreen2} {\contour{DarkRed}{\textls[70]{ICT \hspace{2mm} Solutions \hspace{2mm} for \hspace{2mm} Issues \hspace{2mm} and}}}
+%
+%  \fontsize{55}{68}\bfseries\scshape \textcolor{DarkOliveGreen2} {\contour{DarkRed}{in}}
+
+  \smallskip
+  \fontsize{55}{68}\bfseries \textcolor{DarkOliveGreen2} {\contour{DarkRed}{\textls[70]{Challenges \hspace{2mm} in \hspace{2mm} Smart \hspace{2mm} Grid \hspace{2mm} Technology}}}
+
+  \vspace{8mm}
+  \normalfont\huge\bfseries \textcolor{DarkViolet} {\nth{28} November -- \nth{2} December, 2016}
+\par
+\end{tcolorbox}
+
+\vspace{-3mm}
+\begin{center}
+  \huge\bfseries Co-ordinators
+
+  \vspace{3mm}
+  \huge\bfseries\scshape\color{Brown} Dr.\,R. Rajathy \hspace{2in} Dr.\,V. Geetha
+\end{center}
+%-----------------------
+\end{tcolorbox}
+
+\end{document}

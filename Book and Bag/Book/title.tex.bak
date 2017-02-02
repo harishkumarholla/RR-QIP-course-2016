@@ -1,0 +1,69 @@
+% Title of the thesis
+
+\newgeometry{margin=1in}
+\begin{titlepage}
+  \noindent
+  \begin{minipage}{0.125\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{pecemblem.pdf}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.6\textwidth}
+    \begin{center}
+        \onehalfspacing\LARGE\centering\bfseries
+        \textcolor{blue}{\scshape Report On}
+
+        \textcolor{blue}{AICTE sponsored QIP}
+
+        \textcolor{blue}{Short Term Course}
+    \end{center}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.17\textwidth}
+    \centering
+    \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{aicte-good-transparent}}  %% aicte
+  \end{minipage}
+
+  \vspace{\stretch{0.3}}
+  \begin{center}
+    \huge\bfseries\color{DarkRed}
+    ICT Solutions for Issues and Challenges in
+
+    Smart Grid Technology (ICTSSGT)
+
+    \vspace{5mm}
+    \normalsize \nth{28} November  to \nth{2} December, 2016
+    \par
+  \end{center}
+
+  \vspace{\stretch{0.3}}
+  \begin{center}
+    \Large\bfseries\color{Olive} Co-ordinators
+
+    \vspace{5mm}\color{name}
+    \begin{tabular}{c}
+      \scshape\LARGE Dr.\,R. Rajathy
+    \end{tabular}
+    \hspace{1cm}
+    \begin{tabular}{c}
+      \scshape\LARGE Dr.\,V. Geetha
+    \end{tabular}
+  \end{center}
+
+  \vspace{\stretch{0.3}}
+  \noindent
+  \begin{minipage}{\textwidth}
+    \centering\color{Olive}
+    \Large\normalfont Organised by
+
+    \vspace{5mm}\large\color{other}%\normalfont
+    \begin{tabular}{c}
+      Department of Electrical \& Electronics Engineering and \\
+      Department of Information Technology \\
+      Pondicherry Engineering College \\
+      Pondicherry - 605 014
+    \end{tabular}
+  \end{minipage}
+
+\end{titlepage}
+
