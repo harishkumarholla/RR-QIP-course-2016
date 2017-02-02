@@ -1,0 +1,15 @@
+\documentclass[12pt]{article}
+\usepackage[charter]{mathdesign}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage[a4paper,margin=1in,heightrounded]{geometry}
+\title{Demand Side management – A Game Theory Approach}
+\author{R. Rajathy}
+%
+\begin{document}
+  \maketitle
+  \onehalfspacing
+  The future smart grid is envisioned as a large-scale cyber-physical system encompassing advanced power, communications, control, and computing technologies. In order to accommodate these technologies, it will have to build on solid mathematical tools that can ensure an efficient and robust operation of such heterogeneous and large-scale cyber physical systems. Inherently, the smart grid is a power network composed of intelligent nodes that can operate, communicate, and interact, autonomously, in order to efficiently deliver power and electricity to their consumers. This heterogeneous nature of the smart grid motivates the adoption of advanced techniques for overcoming the various technical challenges at different levels such as design, control, and implementation.
+
+
+\end{document} 

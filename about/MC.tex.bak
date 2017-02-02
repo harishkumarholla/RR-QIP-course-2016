@@ -1,0 +1,18 @@
+\documentclass[12pt]{article}
+\usepackage[charter]{mathdesign}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage[a4paper,margin=1in,heightrounded]{geometry}
+\title{Compere}
+\author{Kalaivani}
+%
+\begin{document}
+  \maketitle
+  \doublespacing
+  \begin{enumerate}
+    \item A pleasant morning to one and all gathered here.  I feel greatly honored in welcoming the reputed personalities and the gatherings for the AICTE QIP sponsored one week short term course on \emph{ICT Solutions for Issues and Challenges in Smart Grid Technology} on behalf of electrical and electronics engineering dept.
+    \item Let us start this flamboyant occasion with the blessings of God the almighty. So, let us all raise for the invocation.
+  \end{enumerate}
+  
+\end{document} 
